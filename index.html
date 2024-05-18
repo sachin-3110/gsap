@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <style>
+        *{margin: 0;padding: 0;box-sizing: border-box;}
+        body{background-image: url('https://images.pexels.com/photos/86695/sky-clouds-outdoors-scenic-86695.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); background-repeat: no-repeat; background-size: cover; background-position: fixed;}
+        h4:hover{
+            cursor: pointer;
+            color: rgba(50, 76, 41, 0.725);
+        }
+        i:hover{
+            cursor: pointer;
+        }
+
+        #full{
+            /* background-color: red; */
+            background-color: rgba(255, 255, 255, 0.546);
+            backdrop-filter: blur(5px);
+        }
+    </style>
+</head>
+<body class="h-screen w-[100%] text-white overflow-x-hidden">
+ <div id="nav" class="p-3 flex justify-between">
+    <h1 class="text-[30px]">LoGo</h1>
+    <i class="text-[40px] ri-menu-unfold-2-line pr-6"></i>
+ </div>
+ <div id="full" class="h-screen w-[20%] absolute -right-[20%] top-0 text-black ">
+<div id="textinmenu" class="flex flex-col gap-8 items-center pt-[180px] -ml-10">
+    <i class="ri-close-fill w-[35px] h-[35px] absolute top-0 right-0 m-3 text-[40px] font-extrabold bg-white p-5 rounded-[50%] flex justify-center items-center text-black"></i>
+    <h4 class="text-[40px] font-extrabold">Home</h4>
+    <h4 class="text-[40px] font-extrabold">About</h4>
+    <h4 class="text-[40px] font-extrabold">Course</h4>
+    <h4 class="text-[40px] font-extrabold">Contact</h4>
+</div>
+ </div>
+
+
+    
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="index.js"></script>
+</body>
+</html>
