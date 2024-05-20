@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrolling Text Animation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+<style>
+    *{
+        margin: 0;
+        padding: 0;box-sizing: border-box;
+    }
+    #marquee{
+        font-family: "Merienda", cursive;;
+        background-color: rgb(222, 252, 56);
+        padding: 3vh;
+        transform: translateX(-100%);
+    }
+    #move{
+        width: 100%;
+        background-color: rgb(222, 252, 56);
+        overflow-x: hidden;
+    }
+</style>
+</head>
+
+<body>
+    <div id="page1" class="bg-black h-screen w-screen flex justify-center">
+            <div id="#otherbox" class="h-52 w-[85%] bg-emerald-400 flex justify-center items-center mt-20 rounded-[50px] text-[50px] text-white font-extrabold m-2">Scroll <span class="bg-black p-2 ml-2 rounded-xl">Down</span></div>
+    </div>
+    <div id="page2" class="bg-black h-screen w-screen ">
+        <div id="move" class="flex ">
+            <div id="marquee" class="p-5 flex flex-shrink-0 gap-5">
+                <h1 class="text-[6vh]">Thrive Beyond limits</h1>
+            <img src="https://www.brandium.nl/wp-content/uploads/2023/07/arrow-br.svg" class="h-[6vh]"
+                alt="">
+            </div>
+            <div id="marquee" class="p-5 flex flex-shrink-0 gap-5">
+                <h1 class="text-[6vh]">Thrive Beyond limits</h1>
+            <img src="https://www.brandium.nl/wp-content/uploads/2023/07/arrow-br.svg" class="h-[6vh]"
+                alt="">
+            </div>
+            <div id="marquee" class="p-5 flex flex-shrink-0 gap-5">
+                <h1 class="text-[6vh]">Thrive Beyond limits</h1>
+            <img src="https://www.brandium.nl/wp-content/uploads/2023/07/arrow-br.svg" class="h-[6vh]"
+                alt="">
+            </div>
+            <div id="marquee" class="p-5 flex flex-shrink-0 gap-5">
+                <h1 class="text-[6vh]">Thrive Beyond limits</h1>
+            <img src="https://www.brandium.nl/wp-content/uploads/2023/07/arrow-br.svg" class="h-[6vh]"
+                alt="">
+            </div>
+            <div id="marquee" class="p-5 flex flex-shrink-0 gap-5">
+                <h1 class="text-[6vh]">Thrive Beyond limits</h1>
+            <img src="https://www.brandium.nl/wp-content/uploads/2023/07/arrow-br.svg" class="h-[6vh]"
+                alt="">
+            </div>
+           
+            
+        </div>
+    </div>
+
+     <div id="page3" class="bg-black h-screen w-screen flex justify-center">
+        <div id="#otherbox" class="h-52 w-[85%] bg-emerald-400 flex justify-center items-center mt-[-20%] rounded-[50px] text-[50px] text-white font-extrabold m-2">Scroll <span class="bg-black p-2 ml-2 rounded-xl">Up</span></div>
+ 
+     </div>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   
+        <script src="scrollingtext.js"></script>
+</body>
+
+</html>
